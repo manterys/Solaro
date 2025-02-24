@@ -1,0 +1,47 @@
+// $dk is Damiankoduje.pl variables
+$dk-primary: #058c42;
+$dk-secondary: #f3faff;
+$dk-gray-1: #1f242c;
+$dk-gray-2: #555555;
+$dk-gray-3: #c7c7c7;
+$dk-white: #ffffff;
+$dk-offert-bg: #586F7CF2;
+$dk-dark: $dk-gray-1;
+$dk-light: $dk-gray-2;
+$dk-info: $dk-gray-3;
+
+body {
+  --bs-body-font-family: "Inter", sans-serif;
+  --bs-body-font-size: 0.9rem;
+}
+
+// Navbar
+.navbar {
+  --bs-navbar-toggler-focus-width: 0;
+  --bs-navbar-toggler-border-color: none;
+}
+.nav-link {
+  --bs-nav-link-color: #{$dk-gray-1};
+  --bs-navbar-nav-link-padding-x: 15px;
+  --bs-navbar-active-color: #{$dk-primary};
+}
+
+// Buttons
+.dk-btn-primary {
+  --bs-btn-padding-x: 50px;
+  --bs-btn-padding-y: 16px;
+  --bs-border-radius: 10px;
+  --bs-btn-color: #{$dk-white};
+  --bs-btn-bg: #{$dk-primary};
+  --bs-btn-hover-bg: #05a84f;
+  --bs-btn-hover-color: #{$dk-white};
+}
+.dk-btn-outline-primary {
+  --bs-btn-padding-x: 26px;
+  --bs-btn-padding-y: 10px;
+  --bs-btn-color: #{$dk-gray-1};
+  --bs-btn-border-color: #{$dk-primary};
+  --bs-btn-hover-color: #{$dk-white};
+  --bs-btn-hover-bg: #{$dk-primary};
+  --bs-btn-hover-border-color: #{$dk-primary};
+}

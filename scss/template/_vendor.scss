@@ -1,0 +1,91 @@
+// Aos
+[data-aos="reveal-up-delay"],
+[data-aos="reveal-up"] {
+  position: relative;
+  overflow: hidden;
+  transition-property: transform, opacity;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 101%;
+    background-color: $dk-secondary;
+    transition: transform 0.6s ease;
+  }
+  &.aos-animate::after {
+    transform: translateY(-100%);
+  }
+}
+[data-aos="reveal-up-delay"] {
+  &::after {
+    transition-delay: 1.4s;
+  }
+}
+
+// Home Swiper
+.home .swiper {
+  padding-bottom: 60px;
+
+  @media (min-width: 992px) {
+    padding-bottom: 80px;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.home .swiper-pagination{
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media (min-width: 992px) {
+    left: 70%;
+  }
+}
+
+// Testimonials Swiper
+.testimonials .swiper {
+  padding-bottom: 70px;
+
+  .swiper-slide {
+    cursor: pointer;
+    position: relative;
+    padding: 60px 40px;
+    background-color: $dk-white;
+    box-shadow: 0px 10px 40px 0px rgba(60, 60, 60, 0.10);
+    
+    @media (min-width: 1200px) {
+      padding: 80px 40px;
+    }
+  
+    img {
+      position: absolute;
+      width: 26px;
+      bottom: 60px;
+      right: 40px;
+  
+      @media (min-width: 1400px) {
+        width: 36px;
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  margin: 0 6px;
+  background-color: $dk-secondary;
+  width: 12px;
+  height: 12px;
+  border: 2px solid $dk-primary;
+  transition: background-color 0.2s ease;
+}
+.swiper-pagination-bullet-active {
+  background-color: $dk-primary;
+}

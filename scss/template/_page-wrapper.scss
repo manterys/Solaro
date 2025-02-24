@@ -1,0 +1,9 @@
+.page-wrapper {
+  opacity: 0;
+  transition: opacity 1s ease;
+  overflow: hidden;
+
+  &.pageLoaded {
+    opacity: 1;
+  }
+}

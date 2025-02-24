@@ -1,0 +1,64 @@
+// .dk is Damiankoduje.pl classes
+
+// Primary
+.dk-bg-primary{
+  background-color: $dk-primary !important;
+}
+.dk-text-primary {
+color: $dk-primary !important;
+}
+
+// Secondary
+.dk-bg-secondary{
+  background-color: $dk-secondary !important;
+}
+.dk-text-secondary{
+  color: $dk-secondary!important;
+}
+
+// Info
+.dk-bg-info{
+  background-color: $dk-info !important;
+}
+.dk-text-info{
+  color: $dk-info!important;
+}
+
+// Light
+.dk-bg-light{
+  background-color: $dk-light !important;
+}
+.dk-text-light{
+  color: $dk-light!important;
+}
+
+// Dark
+.dk-bg-dark{
+  background-color: $dk-dark !important;
+}
+.dk-text-dark{
+  color: $dk-dark!important;
+}
+
+// White
+.dk-bg-white{
+  background-color: $dk-white !important;
+}
+.dk-text-white{
+  color: $dk-white!important;
+}
+
+// Font width
+.f-w-1 {
+  display: block;
+  max-width: 380px;
+}
+.f-w-2 {
+  display: block;
+  max-width: 480px;
+}
+.f-w-3 {
+  display: block;
+  padding: 0 1rem;
+  max-width: 680px;
+}

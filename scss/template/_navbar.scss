@@ -1,0 +1,84 @@
+.navbar-brand {
+  z-index: 1;
+
+  img {
+    width: 75%;
+  }
+}
+.navbar-collapse {
+  flex-grow: 0;
+
+  @media (max-width: 991.98px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $dk-secondary;
+    // background: linear-gradient(
+    //   0deg,
+    //   rgba(232, 255, 232, 1) 0%,
+    //   rgba(232, 255, 232, 1) 74%,
+    //   rgba(243, 250, 255, 1) 100%
+    // );
+
+    .navbar-nav {
+      padding-top: 4rem;
+    }
+
+    .btn {
+      width: max-content;
+      margin-bottom: 3rem;
+    }
+  }
+}
+.menu-btn {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
+  z-index: 100000;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  left: 18px;
+  width: 24px;
+  height: 2px;
+  background: $dk-primary;
+  -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.hamburger-top {
+  top: 22px;
+}
+.hamburger-middle {
+  top: 29px;
+}
+.hamburger-bottom {
+  bottom: 22px;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+  .menu-btn {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: transform 0.4s ease;
+    transition: transform 0.4s ease;
+  }
+  .hamburger-top {
+    -webkit-transform: rotate(-45deg) translateY(5px) translateX(-5px);
+    transform: rotate(-45deg) translateY(5px) translateX(-5px);
+  }
+  .hamburger-middle {
+    opacity: 0;
+  }
+  .hamburger-bottom {
+    -webkit-transform: rotate(45deg) translateY(-5px) translateX(-5px);
+    transform: rotate(45deg) translateY(-5px) translateX(-5px);
+  }
+}
